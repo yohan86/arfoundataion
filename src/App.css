@@ -1,0 +1,190 @@
+/*.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+*/
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+body{
+    font-size:14px;
+    color:#666;
+}
+ h2,h3{
+    font-weight: 600;
+    font-style: normal;
+}
+ h2{
+    font-size:20px;
+ }
+ h3{
+    font-size:16px;
+ }
+ h4{
+    font-size:15px;
+    font-weight: 500;
+    font-style: normal;
+ }
+ .block-wrapper{
+    width:100%;
+    position:relative;
+    display:block;
+ }
+ .block-wrapper .inner-wrapper{
+    margin:0 auto;
+ }
+.top-border{
+    position: absolute;
+    top:-35px;
+    left:0;
+    width:100%;
+    height:40px;
+}
+ .top-border:After{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 28px;
+    background-image: url("/images/border-circle-sm.png");
+    background-position: -4px -65px;
+    background-size: 44px auto;
+ }
+
+ #hero-slider:after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 28px;
+    background-image: url("/images/border-circle-sm.png");
+    background-position: -4px -65px;
+    background-size: 44px auto;
+ }
+
+
+/*Vision Mission*/
+.mission-blk{
+    background-position: right center;
+}
+.vision-bg{
+    background:url("/images/vision-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.outer-wrapper{
+    position:relative;
+}
+.outer-wrapper:after{
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    right: 0;
+    bottom:0;
+}
+
+
+/*About*/
+.about-blk h2{
+    text-shadow:3px 0 3px #ccc;
+}
+.bg-circle{
+    content: "";
+    display: block;
+    width: 88px;
+    height: 49px;
+    background-image: url("/images/border-circle-lg.png");
+    background-repeat: no-repeat;
+    background-position: -1px -45px;
+    background-size: 102% auto;
+    position: relative;
+    margin: 0 auto;
+}
+/*TheCEO*/
+.theceo{
+    /*background-image: linear-gradient(to bottom, rgb(133, 154, 235), rgb(255, 255, 255));*/
+}
+.theceo .sub-title-text{
+    text-shadow:-1px 2px 2px #6f7cb0;
+}
+.theceo .title{
+    box-shadow:2px 2px 2px 0px #ccc;
+}
+.theceo .ceo-image{
+    box-shadow:2px 6px 6px #666;
+}
+
+@media (min-width: 768px) {
+    body{
+        font-size:16px;
+    }
+    h2{
+        font-size:25px;
+     }
+     h3{
+        font-size:20px;
+     }
+     h4{
+        font-size:18px;
+     }
+
+    .angled-box-right {
+        clip-path: polygon(0px 0, 100% 0px, 90.5% 100%, 0% 100%);
+    }
+    .angled-box-left {
+        clip-path: polygon(43px 0px, 100% 0px, 100% 100%, 0% 100%);
+    }
+    .mission-blk{
+        margin-left:-39px;
+    }
+    .outer-wrapper:after{
+        width: 10px;
+        height: 104%;
+        transform: rotate(189deg);
+        right: 13px;
+        top: -5px;
+        bottom:auto;
+    }
+
+  
+}
+@media (min-width: 1024px) {
+    /*Vision Mission*/
+    
+    /*About*/
+    .bg-circle{
+        content: "";
+        display: block;
+        width: 95px;
+        height: 168px;
+        background-position:13px 0;
+        background-size: 173% auto;
+        position: absolute;
+        top: 50%;
+        right:1px;
+        margin-top: -84px;
+    }
+}
