@@ -19,3 +19,7 @@ export interface Slider{
     message:string;
     url:string;
   }
+
+  export interface AboutInfo{
+    description?:string;
+  }

@@ -2,15 +2,17 @@ import { useGSAP } from "@gsap/react";
 import {SplitText} from "gsap/all";
 import gsap from "gsap";
 import { useMediaQuery } from "react-responsive";
+import type {AboutInfo} from "../types";
+import ReactMarkdown from "react-markdown";
 
 
 
 
-
-const About = ()=> {
+const About:React.FC<AboutInfo> = ({description})=> {
     const isMobile = useMediaQuery({maxWidth:767});
 
     useGSAP(()=>{
+
         const animateText = new SplitText(".animate-text", {type: "lines"});
        
         const about = gsap.timeline({
@@ -33,7 +35,8 @@ const About = ()=> {
             duration:1,
             ease:"power2.out",
         });
-   
+
+
     }, []);
     
     return (
@@ -49,9 +52,15 @@ const About = ()=> {
                     <span className="bg-circle"></span>
                 </div>
                 <div className="mainintro-blk animate-text text-center w-[100%] lg:py-[12px] text-[#fff] lg:w-[50%]">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quas officiis eos blanditiis nihil laudantium voluptates, qui laboriosam doloribus hic quis modi, dicta cumque tenetur a maxime distinctio iste vel.
-                    Neque aut distinctio a.</p>
-                    <p> Cumque labore fuga et laborum autem cum. Incidunt eius iusto unde neque voluptates deserunt sint cumque iure voluptatem at molestiae, earum voluptas amet nobis sit possimus.  Neque aut distinctio a. Cumque labore fuga et laborum autem cum. Incidunt eius iusto unde neque voluptates  Neque aut distinctio a. Cumque labore fuga et laborum autem cum. Incidunt eius iusto unde neque voluptates  Neque aut distinctio a. Cumque labore fuga et laborum autem cum. Incidunt eius iusto unde neque voluptates</p>
+                    
+                    <ReactMarkdown 
+                    children={description}
+                    components={{
+                        a: ({node, ...props})=>(
+                            <a {...props} target="_blank" rel="noopener noreferrer" />
+                        ),
+                    }}
+                    />
                 </div>
             </div>
         </div>

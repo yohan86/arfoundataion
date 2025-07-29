@@ -1,16 +1,16 @@
 import {useState, useEffect} from "react";
-import ReactMarkdown from "react-markdown";
 import HeroSlider from "../components/HeroSlider";
 import VisionMission from "../components/VisionMission";
-import type { SliderItem, Slider, CEOmessage } from "../types";
+import type { SliderItem, Slider } from "../types";
 import About from "../components/About";
 import TheCEO from "../components/TheCEO";
+import ReactMarkdown from "react-markdown";
 
 
   
 interface Home{
   Heading: string;
-  maindescription:string;
+  maindescription?:string;
   Homeslider:Slider[];
   TheCEOMessage:string;
   CEOVideoUrl:string;
@@ -18,7 +18,7 @@ interface Home{
 
 const Home = () => {
 
-  const [pagedetails, setPagedetails] = useState<Home | null>();
+  const [pagedetails, setPagedetails] = useState<Home | null>(null);
   const [slider, setSlider] = useState<SliderItem[]>([]);
 
   const API_URL = import.meta.env.VITE_API_URL;
@@ -43,7 +43,7 @@ const Home = () => {
         setPagedetails(homeData);
        // console.log(homeData);
 
-        const sliderItems:SliderItem[] = homeData.Homeslider.map((item:Slider)=>({
+        const sliderItems:SliderItem[] = homeData.Homeslider?.map((item:Slider)=>({
           title:item.Title,
           caption:item.description,
           url:item.sliderimage?.data?.attributes?.url ?? '',
@@ -52,7 +52,7 @@ const Home = () => {
         console.log(sliderItems)
 
       }catch(e:any){
-        console.log(e.error);
+        console.log(e);
       }
       
     };
@@ -63,21 +63,14 @@ const Home = () => {
     <div>
 
     <HeroSlider slides={slider} />
+ 
+    {pagedetails?.maindescription && (
+      <About description={pagedetails?.maindescription} />
+    )}
     <VisionMission />
-    <About />
     {pagedetails?.TheCEOMessage && (
       <TheCEO message={pagedetails?.TheCEOMessage} url={pagedetails?.CEOVideoUrl}  />
-    )}
-
-    <ReactMarkdown 
-      children={pagedetails?.maindescription}
-      components={{
-        a: ({node, ...props})=>(
-            <a {...props} target="_blank" rel="noopener noreferrer" />
-        ),
-      }}
-    />
-    
+    )}    
 
     <div className="h-[500px]">
       <pre>{/*JSON.stringify(pagedetails, null , 2)*/}</pre>

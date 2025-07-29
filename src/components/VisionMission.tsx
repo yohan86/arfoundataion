@@ -1,17 +1,18 @@
 import gsap from "gsap";
 import {useGSAP} from "@gsap/react";
 import {SplitText } from "gsap/all";
+import { useRef } from "react";
 
 
 const VisionMission = ()=> {
-
+    const containerRef = useRef(null);
     useGSAP(()=>{
+   
 
         const scrolText = new SplitText('.line-scroll', {type:"lines"});
         const t1 = gsap.timeline({
             scrollTrigger:{
-                trigger:"#hero-slider",
-                //start:"top 50%",
+                trigger:".vision-bg",
                 start: "bottom 50%",
                 toggleActions: "play none none reverse",
             }
@@ -35,11 +36,12 @@ const VisionMission = ()=> {
             stagger: 0.08,
 
           }, "<0.8");
+        
 
     },[]);
 
     return (
-        <div className="vision-bg flex flex-col w-[90%] m-auto overflow-hidden justify-center mt-20 md:flex-row lg:w-[866px] ">
+        <div ref={containerRef} id="vision-mission" className="vision-bg flex flex-col w-[90%] m-auto overflow-hidden justify-center mt-20 md:flex-row lg:w-[866px] ">
             <div className="outer-wrapper w-[100%] h-[300px] md:w-[55%]">
                 <div className="vision-blk w-[100%] h-[100%] bg-[#ec8e3b]/50 angled-box-right items-center relative">
                     <div className="flex intro-wrapper w-[100%] h-[100%] md:w-[90%] text-white items-center text-center px-5">
