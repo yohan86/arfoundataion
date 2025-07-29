@@ -1,5 +1,6 @@
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 import type {CEOmessage } from "../types";
+import YtVideoPopup from "./YtVideoPopup";
 
 const TheCEO: React.FC<CEOmessage> = ({message, url})=> {
 
@@ -19,6 +20,10 @@ const TheCEO: React.FC<CEOmessage> = ({message, url})=> {
                     <h2 className="title text-white uppercase table lg:inline-block bg-[#f9849f] px-2 mb-5 rounded-[5px] m-auto md:m-0 md:mb-5">The CEO</h2>
                     <BiSolidQuoteAltLeft className="text-[#666] text-[25px]" /><p>{message}</p>
                     <BiSolidQuoteAltRight className="float-right text-[#666] text-[25px]" />
+                    {url && (
+                        <YtVideoPopup videoId={url} />
+                    )}
+                    
                 </div>
                 
             </div>

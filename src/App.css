@@ -16,6 +16,8 @@
     font-style: normal;
   }
 
+
+
 */
 .satisfy-regular {
     font-family: "Satisfy", cursive;
@@ -101,7 +103,7 @@ body{
     height: 10px;
     position: absolute;
     background-color: #fff;
-    z-index: 10;
+    z-index: 1;
     right: 0;
     bottom:0;
 }
@@ -131,7 +133,7 @@ body{
     text-shadow:-1px 2px 2px #6f7cb0;
 }
 .theceo .title{
-    box-shadow:2px 2px 2px 0px #ccc;
+    box-shadow:4px 5px 9px #666;
 }
 .theceo .ceo-image{
     box-shadow:2px 6px 6px #666;

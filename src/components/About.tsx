@@ -9,6 +9,7 @@ import { useMediaQuery } from "react-responsive";
 
 const About = ()=> {
     const isMobile = useMediaQuery({maxWidth:767});
+
     useGSAP(()=>{
         const animateText = new SplitText(".animate-text", {type: "lines"});
        
@@ -32,11 +33,9 @@ const About = ()=> {
             duration:1,
             ease:"power2.out",
         });
-
-
+   
     }, []);
     
-
     return (
     <div className="block-wrapper flex mt-10 mb-20 lg:my-20 bg-[#3bb570]">
         <div className="inner-wrapper w-[90%] md:w-[90%] py-12">
