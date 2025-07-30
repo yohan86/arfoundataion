@@ -1,23 +1,10 @@
-import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation  } from "swiper/modules";
-import axios from "axios";
-import { useTranslation } from "react-i18next";
-
-
 
 const API_URL = import.meta.env.VITE_API_URL;
-const API_TOKEN = import.meta.env.VITE_API_TOKEN;
 
-interface Image{
-    id:number;
-    attributes:{
-        name:string;
-        url:string;
-        caption:string;
-    }
 
-}
+
 interface SliderItem {
     title:string;
     caption:string;
@@ -30,7 +17,7 @@ interface SliderItem {
 const  HeroSlider = ({slides} : HeroSliderProps) => {
 
     return (
-        <div id="hero-slider" className="w-full h-[320px] md:h-[460px] lg:h-[560px]">
+        <div id="hero-slider" className="w-full h-[80vh] md:h-[460px] lg:h-[560px]">
         <Swiper
             slidesPerView={1}
             navigation={true}
@@ -47,6 +34,7 @@ const  HeroSlider = ({slides} : HeroSliderProps) => {
                         src={`${API_URL}${image?.url}`} 
                         alt={`${image?.title}`}
                         className="w-full h-full object-cover"
+                        crossOrigin="anonymous"
                         /> 
                     </SwiperSlide>
               

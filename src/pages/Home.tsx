@@ -4,7 +4,6 @@ import VisionMission from "../components/VisionMission";
 import type { SliderItem, Slider } from "../types";
 import About from "../components/About";
 import TheCEO from "../components/TheCEO";
-import ReactMarkdown from "react-markdown";
 
 
   

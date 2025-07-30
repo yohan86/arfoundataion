@@ -35,9 +35,12 @@ body{
     color:#666;
 }
 h1,h2{
-    font-family:"poppins-bold", sans-serif;
+    font-family:"Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
- h2,h3{
+ h3{
+    font-family:"Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
