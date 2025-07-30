@@ -41,7 +41,7 @@ const VisionMission = ()=> {
     },[]);
 
     return (
-        <div ref={containerRef} id="vision-mission" className="vision-bg flex flex-col w-[90%] m-auto overflow-hidden justify-center mt-20 md:flex-row lg:w-[866px] ">
+        <div ref={containerRef} id="vision-mission" className="vision-bg flex flex-col w-[90%] m-auto overflow-hidden justify-center mt-10 md:mt-20 md:flex-row lg:w-[866px] ">
             <div className="outer-wrapper w-[100%] h-[300px] md:w-[55%]">
                 <div className="vision-blk w-[100%] h-[100%] bg-[#ec8e3b]/50 angled-box-right items-center relative">
                     <div className="flex intro-wrapper w-[100%] h-[100%] md:w-[90%] text-white items-center text-center px-5">

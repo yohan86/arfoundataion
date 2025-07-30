@@ -40,7 +40,7 @@ const About:React.FC<AboutInfo> = ({description})=> {
     }, []);
     
     return (
-    <div className="block-wrapper flex mt-10 mb-20 lg:my-20 bg-[#3bb570]">
+    <div className="block-wrapper flex mt-10 md:mb-20 lg:my-20 bg-[#3bb570]">
         <div className="inner-wrapper w-[90%] md:w-[90%] py-12">
             <div className="about-blk flex flex-col lg:items-stretch gap-4 lg:gap-8 lg:flex-row">
                 <div className="title-blk  content-center w-[100%] lg:w-[40%] xl:w-[30%]">

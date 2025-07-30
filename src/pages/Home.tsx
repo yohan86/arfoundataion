@@ -72,7 +72,7 @@ const Home = () => {
       <TheCEO message={pagedetails?.TheCEOMessage} url={pagedetails?.CEOVideoUrl}  />
     )}    
 
-    <div className="h-[500px]">
+    <div className="h-[100px]">
       <pre>{/*JSON.stringify(pagedetails, null , 2)*/}</pre>
       </div>
     </div>
