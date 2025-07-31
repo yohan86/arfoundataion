@@ -38,13 +38,15 @@
   @apply text-white text-3xl;
 }
 .primary-button {
-  @apply relative px-3 py-1 mt-10 m-auto md:ml-0  text-white rounded cursor-pointer overflow-hidden;
-  background:linear-gradient(to right, #666 75%, #f9849f 25%);
+  @apply relative px-3  mt-10 m-auto md:ml-0  text-white rounded cursor-pointer overflow-hidden;
+  background:linear-gradient(to right, #1d94b0 75%, #f9849f 25%);
   background-size: 400% 100%;
   background-position:75% 0%;
   transition: background-position 0.5s ease-out;
+  padding:7px 9px 4px;
   box-shadow:3px 2px 8px #666;
 }
+.primary-button:focus,
 .primary-button:hover{
   background-position: 100% 0%;
 }

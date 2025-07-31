@@ -6,14 +6,13 @@ import { useGSAP } from "@gsap/react";
 import {SplitText } from "gsap/all";
 
 const TheCEO: React.FC<CEOmessage> = ({message, url})=> {
-
+    
     if(!message) return null;
 
     useGSAP(()=>{
         gsap.set(".animate-intro", { opacity: 1 });
         const animateTitle = new SplitText(".animate-title", {type: "lines"});
         const animateText = SplitText.create(".animate-intro", {type: "words", aria:"hidden"});
-        const animateBtn = SplitText.create(".animate-btn", {type: "words"});
         const CEOt1 = gsap.timeline({
             scrollTrigger:{
                 trigger:"#theceo",
@@ -56,10 +55,12 @@ const TheCEO: React.FC<CEOmessage> = ({message, url})=> {
                 <div className="w-[85%] mt-12 px-5 pb-10 md:w-[60%] lg:w-[50%] xl:w-[60%]  overflow-hidden">
                     <div className="animate-title">
                         <div className="sub-title-text satisfy-regular text-[30px] text-[#373640] text-center md:text-left">Message from</div>
-                        <h2 className="title text-white uppercase table lg:inline-block bg-[#f9849f] px-2  mb-5 rounded-[5px] leading-[1.55] m-auto md:m-0 md:mb-5">The CEO</h2>
+                        <h2 className="title text-white uppercase table lg:inline-block bg-[#f9849f] px-2 pt-[4px] mb-5 rounded-[5px] leading-relaxed m-auto md:m-0 md:mb-5">The CEO</h2>
+                    </div>
+                    <div className="comma-animate">
+                        <BiSolidQuoteAltLeft className="text-[#666] text-[25px] mb-5" />
                     </div>
                     <div className="animate-intro opacity-0">
-                        <BiSolidQuoteAltLeft className="text-[#666] text-[25px] mb-5" />
                         <p>{message}</p>
                     </div>
                     <div className="animate-btn">

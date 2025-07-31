@@ -17,7 +17,7 @@ const  YtVideoPopup:React.FC<YtVideoProps> = ({videoId})=> {
     <div>
         <button onClick={openModal} className="primary-button flex flex-row justify-between">
             Watch Video
-            <MdOutlineSlowMotionVideo className=" text-[22px] ml-3" />
+            <MdOutlineSlowMotionVideo className=" text-[22px] ml-3 mt-[-2px] md:mt-0" />
         </button>
         <Modal
         isOpen={isOpen}
