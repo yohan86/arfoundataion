@@ -2,7 +2,11 @@ import LangSwitcher from "./LangSwitcher";
 import NavBar from "./NavBar";
 import {useTranslation} from "react-i18next";
 
+
+
+
 const Header= ()=> {
+
   const { t } = useTranslation();
   return (
     <header className="relative">

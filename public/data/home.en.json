@@ -1,0 +1,59 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "Heading": "Anishka Ranjiwee Foundation",
+        "maindescription": "The Anishka Ranjeewi Foundation is dedicated to empowering communities and transforming lives, especially in rural areas where opportunities are limited.\nOur mission is to provide the support, resources, and guidance needed for individuals and families to build sustainable livelihoods and brighter futures.\n\nThrough education, healthcare initiatives, skills development, and community projects, we strive to create lasting impact.\nWe believe that every person deserves the chance to live with dignity, security, and hope — and we work tirelessly to make that vision a reality.",
+        "TheCEOMessage": "At the heart of our foundation lies a simple belief: every person deserves the opportunity to build a better life. I established this foundation to bring hope and support to those who need it most, especially in rural areas where resources are limited.\n\nThrough education, healthcare, and community development projects, we aim to create lasting change. Our mission is not just to provide assistance, but to empower individuals and families to stand on their own with dignity and confidence.\n\nTogether, we can build stronger communities and a brighter future for generations to come.\n\nDr.Anishka Ranjeewi",
+        "CEOVideoUrl": "bNJW113tbKk",
+        "createdAt": "2025-07-30T07:38:37.284Z",
+        "updatedAt": "2025-07-30T12:50:04.371Z",
+        "publishedAt": "2025-07-30T08:01:26.479Z",
+        "locale": "en",
+        "Homeslider": [
+          {
+            "id": 1,
+            "Title": "Sample Title 1",
+            "description": null
+          },
+          {
+            "id": 2,
+            "Title": "Sample title 2",
+            "description": null
+          },
+          {
+            "id": 3,
+            "Title": "Sample title 3",
+            "description": null
+          }
+        ],
+        "localizations": {
+          "data": [
+            {
+              "id": 2,
+              "attributes": {
+                "Heading": "අනීෂ්කා රංජීවි පදනම",
+                "maindescription": "ග්‍රාමීය ප්‍රදේශවල අවස්ථා සීමිත වන අවස්ථාවල, සමාජයන් සබල කිරීම සහ ජීවිත මාරු කිරීම සඳහා කැපවී සිටී.\nඅපගේ මෙහෙවර නම් පුද්ගලයන්ට සහ පවුල්වලට තහවුරු කළ ජීවිකා සහ දැකිය හැකි අනාගතයක් ගොඩනගා ගැනීමට අවශ්‍ය සහයෝගය, සම්පත් හා මගපෙන්වීම ලබා දීමයි.\n\nඅධ්‍යාපන, සෞඛ්‍ය උත්සාහයන්, දක්ෂතා සංවර්ධනය, සහ ප්‍රජා වැඩසටහන් මඟින් අපි ස්ථිර බලපෑමක් නිර්මාණය කිරීමට කටයුතු කරයි.\nසියලුම මිනිසෙකුට ගෞරවයෙන්, ආරක්ෂාවෙන් සහ විශ්වාසයෙන් ජීවත්වන අවස්ථාවක් හිමි විය යුතුයැයි අපි විශ්වාස කරමු — එම දැක්ම යථාර්ථයකට පත් කිරීමට අපි නිරන්තරයෙන් මහන්සි වෙමු.",
+                "TheCEOMessage": "අපේ පදනමේ මූලික නಂಬිකාව සරලය: සෑම මනුෂ්‍යයෙකුටම වඩා හොඳ ජීවිතයක් ගොඩනගා ගැනීමට අවස්ථාව හිමිවිය යුතුය. සම්පත් සීමිත ග්‍රාමීය ප්‍රදේශවල, අවශ්‍යතාවය මතුවන පුද්ගලයන්ට සහාය සහ අපේක්ෂාව ලබා දීමට මම මෙම පදනම ස්ථාපනය කළෙමි.\n\nඅධ්‍යාපන, සෞඛ්‍යය සහ ප්‍රජා සංවර්ධන ව්‍යාපෘති මගින් අපි දීර්ඝකාලීන වෙනසක් සාදා ගැනීමට බලාපොරොත්තු වෙමු. අපේ මෙහෙවර සරල උදව් ලබා දීම නොව, පුද්ගලයින් සහ පවුල්වලට ගෞරවයෙන් සහ විශ්වාසයෙන් ස්වයංපෝෂිතව ජීවත් වීමට බලගන්වීමයි.\n\nඅපි එකට එක්වුවහොත්, ශක්තිමත් ප්‍රජාවන් සහ ගැණුම් පරපුරකට දීප්තිමත් අනාගතයක් ගොඩනගා ගත හැකිය.",
+                "CEOVideoUrl": "bNJW113tbKk",
+                "createdAt": "2025-07-30T07:41:38.283Z",
+                "updatedAt": "2025-07-31T09:37:14.396Z",
+                "publishedAt": "2025-07-31T09:37:14.380Z",
+                "locale": "si-LK"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

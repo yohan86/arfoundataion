@@ -1,9 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation  } from "swiper/modules";
 
-const API_URL = import.meta.env.VITE_API_URL;
 
-interface SliderItem {
+/*interface SliderItem {
     title:string;
     caption:string;
     url:string;
@@ -11,8 +10,8 @@ interface SliderItem {
 interface HeroSliderProps {
     slides:SliderItem[];
 }
-
-const  HeroSlider = ({slides} : HeroSliderProps) => {
+*/
+const  HeroSlider = () => {
 
     const SliderIamges =[
         "images/slider/home/slider-1.jpg",
