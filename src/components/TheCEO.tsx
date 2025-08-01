@@ -35,7 +35,7 @@ const TheCEO: React.FC<CEOmessage> = ({message, url})=> {
         .from(".animate-btn", {
             opacity: 0,
             y: 50,
-            duration: 1,
+            duration:0.3,
             ease: "power3.out",
         });
       

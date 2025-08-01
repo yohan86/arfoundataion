@@ -50,3 +50,10 @@
 .primary-button:hover{
   background-position: 100% 0%;
 }
+
+.slogan-title{
+  @apply  w-[75%] !text-[17px] text-[#f9849f] mt-[25px] md:!text-[35px] md:mt-[25px];
+}
+.lang-si .slogan-title{
+  @apply !text-[11px] mt-[30px];
+}
