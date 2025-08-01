@@ -47,9 +47,9 @@ const TheCEO: React.FC<CEOmessage> = ({message, url})=> {
         <div id="theceo" className="block-wrapper theceo flex relative border-t-35 border-t-[#1d94b0] mt-30 md:mt-10 lg:mt-30">
             <span className="top-border"></span>
             <div className="inner-wrapper flex flex-col py-5 items-center md:items-start md:justify-between md:flex-row md:w-[90%] xl:w-[1000px]">
-                <div className="ceo-image w-[180px] h-[175px] bg-[#ccc] border-[#00ffff] rounded-xl mt-[-123px] rotate-[45deg] md:w-[260px] md:h-[240px] md:mt-[0] md:mr-[98px] lg:w-[300px] lg:h-[300px] lg:mt-[-63px] overflow-hidden">
+                <div className="ceo-image w-[180px] h-[175px] bg-[#f0c39e] border-[#00ffff] rounded-xl mt-[-123px] rotate-[45deg] md:w-[260px] md:h-[240px] md:mt-[0] md:mr-[98px] lg:w-[300px] lg:h-[300px] lg:mt-[-63px] overflow-hidden">
                     <div className="rotate-[-45deg] w-[100%] md:h-[100%]">
-                        <img className="w-full h-full object-cover" src="https://deadline.com/wp-content/uploads/2022/08/Chelsea-Frei-2.jpg?w=681&h=383&crop=1" />
+                        <img className="w-full h-full object-cover rounded-full" src="images/profile.jpeg" />
                     </div>
                 </div>
                 <div className="w-[85%] mt-12 px-5 pb-10 md:w-[60%] lg:w-[50%] xl:w-[60%]  overflow-hidden">
