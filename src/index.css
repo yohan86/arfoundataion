@@ -55,5 +55,5 @@
   @apply  w-[75%] !text-[17px] text-[#f9849f] mt-[25px] md:!text-[35px] md:mt-[25px];
 }
 .lang-si .slogan-title{
-  @apply !text-[11px] mt-[30px];
+  @apply !text-[11px] md:!text-[20px] mt-[30px] md:mt-[50px];
 }
