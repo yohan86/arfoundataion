@@ -5,6 +5,7 @@ import type { SliderItem, Slider } from "../types";
 import About from "../components/About";
 import TheCEO from "../components/TheCEO";
 import { useTranslation } from "react-i18next";
+import Footer from "../components/Footer";
 
 
 
@@ -74,7 +75,9 @@ const Home = () => {
 
     <div className="h-[100px]">
       <pre>{/*JSON.stringify(pagedetails, null , 2)*/}</pre>
-      </div>
+    </div>
+      
+    <Footer />
     </div>
   )
 }
