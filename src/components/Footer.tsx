@@ -1,18 +1,20 @@
 import Contacts from "./Contacts";
+import NavBar from "./NavBar";
 import SocialMedia from "./SocialMedia";
 
 const Footer= () => {
   return (
-    <div className="footer-wrapper relative min-h-[150px] bg-[#006881]">
+    <div className="footer-wrapper light-text relative min-h-[150px] bg-[#006881]">
         <span className="top-border !top-0"></span>
         <div className="footer w-[90%] h-[100%] m-auto text-[#ede7e7] text-[12px] md:text-[14px]">
-           <div className="flex flex-col md:flex-row footer-inner justify-between pt-[30px]">
+           <div className="flex flex-col md:flex-row footer-inner justify-between pt-[30px] md:pt-[50px]">
                 <div className="left-blk">
+                    <NavBar menuIcon={false} />
                     <Contacts />
                 </div>
                 <div className="right-blk">
                     <div className="grid  md:justify-items-end">
-                        <div className="scial-wrapper flex flex-col md:flex-row gap-1 my-3 md:my-2">
+                        <div className="scial-wrapper flex flex-col md:flex-row gap-1 my-3 md:m-0 md:mb-3">
                             <h4 className="font-normal uppercase text-[14px] m-0 mr-2">Follow Us:</h4>
                             <SocialMedia />
                         </div>

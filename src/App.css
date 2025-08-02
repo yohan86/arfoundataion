@@ -1,3 +1,7 @@
+
+:root {
+    color-scheme: light !important; /* Tell browser to ignore dark mode */
+}
 .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -16,24 +20,19 @@
     font-style: normal;
   }
 
-:root {
-    color-scheme: light !important; /* Tell browser to ignore dark mode */
-}
 .satisfy-regular {
     font-family: "Satisfy", cursive;
     font-weight: 400;
     font-style: normal;
 }
-*{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 
-}
 body{
     font-size:14px;
     color:#666;
-    background:#fff !important;
+    background:#fff !important;    
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 h1,h2{
     font-family:"Poppins", sans-serif;
@@ -56,6 +55,17 @@ h1,h2{
     font-weight: 500;
     font-style: normal;
  }
+ a{
+    color:#1d94b0;
+ }
+.light-text a{
+    color:#ede7e7;
+}
+.light-text a:hover,
+a:hover{
+   color:#f9849f;
+}
+
  .block-wrapper{
     width:100%;
     position:relative;
@@ -80,8 +90,6 @@ h1,h2{
     background-position: -4px -65px;
     background-size: 44px auto;
  }
-
-
  #hero-slider:after{
     content: "";
     display: block;
@@ -90,9 +98,7 @@ h1,h2{
     background-image: url("/images/border-circle-sm.png");
     background-position: -3px -81px;
     background-size: 53px auto;
-  
  }
-
 
 /*Vision Mission*/
 .mission-blk{
@@ -116,7 +122,6 @@ h1,h2{
     right: 0;
     bottom:0;
 }
-
 
 /*About*/
 .about-blk h2{
@@ -180,7 +185,6 @@ h1,h2{
         bottom:auto;
     }
 
-  
 }
 
 @media (min-width: 1024px) {
