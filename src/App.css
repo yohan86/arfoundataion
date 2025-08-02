@@ -1,4 +1,4 @@
-/*.poppins-medium {
+.poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -16,9 +16,9 @@
     font-style: normal;
   }
 
-
-
-*/
+:root {
+    color-scheme: light !important; /* Tell browser to ignore dark mode */
+}
 .satisfy-regular {
     font-family: "Satisfy", cursive;
     font-weight: 400;
@@ -33,7 +33,7 @@
 body{
     font-size:14px;
     color:#666;
-    background:#fff;
+    background:#fff !important;
 }
 h1,h2{
     font-family:"Poppins", sans-serif;
@@ -80,6 +80,7 @@ h1,h2{
     background-position: -4px -65px;
     background-size: 44px auto;
  }
+
 
  #hero-slider:after{
     content: "";
@@ -199,3 +200,9 @@ h1,h2{
         margin-top: -84px;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #ffffff !important;
+    }
+  }

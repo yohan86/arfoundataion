@@ -34,6 +34,31 @@
   font-display: swap;
 }
 
+ /*Main menu*/
+ .main-menu{
+  @apply absolute right-0 top-[100%] w-full bg-[#1d94b0] text-white;
+}
+.main-menu .menu-wrapper{
+  max-height:0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 1s;
+}
+.main-menu.active .menu-wrapper{
+  @apply h-auto;
+  max-height:400px;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.menu-toggle{
+  @apply block;
+}
+.menu-toggle .menu-bar{
+  @apply block w-[22px] h-[3px] my-1 bg-[#1d94b0];
+}
+
+/*Slider*/
 .swiper-button-next, .swiper-button-prev {
   @apply text-white text-3xl;
 }
@@ -52,8 +77,31 @@
 }
 
 .slogan-title{
-  @apply  w-[75%] !text-[17px] text-[#f9849f] mt-[25px] md:!text-[35px] md:mt-[25px];
+  @apply  w-[75%] !text-[17px] text-[#f9849f] mt-[12px] text-center md:!text-[35px] md:mt-[25px] md:w-auto;
 }
 .lang-si .slogan-title{
-  @apply !text-[11px] md:!text-[20px] mt-[30px] md:mt-[50px];
+  @apply !text-[11px] md:!text-[20px] mt-[12px] md:mt-[50px];
 }
+
+@media (min-width: 768px) {
+  /*Main menu*/
+  .main-menu{
+    @apply relative flex w-auto items-end right-auto top-auto items-end mb-5 bg-transparent text-[#666];
+  }
+  .menu-toggle .menu-bar{
+    @apply hidden;
+  }
+  .main-menu .menu-wrapper{
+    max-height:none;
+    opacity: 1;
+  }
+  .main-menu .menu-wrapper li{
+    @apply relative;
+  }
+  .main-menu .menu-wrapper li:after{
+      width:100%;
+      height:2px;
+      position:relative;
+  }
+}
+ 
