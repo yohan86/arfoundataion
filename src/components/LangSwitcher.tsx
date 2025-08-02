@@ -13,7 +13,7 @@ const LangSwitcher= ()=> {
         
     }
     return (
-        <div className="lang-wrapper flex text-[12px] md:text-[14px] gap-2 absolute top-[48px] right-[50px] md:top-[10px] md:right-[10px]">
+        <div className="lang-wrapper flex text-[12px] md:text-[14px] gap-2 absolute top-[48px] right-[50px] md:top-[60px] md:right-[55px] lg:top-[10px] lg:right-[10px]">
             <button className="cursor-pointer" onClick={()=> changeLanguage("en")}>English</button>
             <button className="cursor-pointer" onClick={()=> changeLanguage("si")}>සිංහල</button>
         </div>

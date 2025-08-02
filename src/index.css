@@ -34,6 +34,13 @@
   font-display: swap;
 }
 
+.playwrite {
+  font-family: "Playwrite AU NSW", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
  /*Main menu*/
 .main-menu{
   @apply absolute right-0 top-[100%] w-full bg-[#1d94b0] text-white;
@@ -64,7 +71,7 @@
   }
 
 .footer .main-menu {
-    @apply bg-transparent relative top-auto right-auto;
+    @apply bg-transparent relative top-auto right-auto mb-0;
 }
   .footer .main-menu .menu-wrapper{
       transform: translateY(0);
@@ -79,6 +86,7 @@
   }
   .footer .main-menu .menu-wrapper li a{
     font-weight: 400;
+    color:#fff;
   }
 
 /*Slider*/
@@ -100,21 +108,29 @@
 }
 
 .slogan-title{
-    @apply  w-[75%] !text-[17px] text-[#f9849f] mt-[12px] text-center md:!text-[35px] md:mt-[25px] md:w-auto;
+    @apply  w-[63%] !text-[12px] text-[#f9849f] absolute top-2 right-2 md:!text-[25px] md:w-auto xl:top-8 md:right-auto md:left-[200px];
 }
 .lang-si .slogan-title{
-    @apply !text-[11px] md:!text-[20px] mt-[12px] md:mt-[50px];
+    @apply !text-[10px] md:!text-[20px];
 }
 
 @media (min-width: 768px) {
+
+ 
+}
+@media (min-width: 1024px) {
   /*Main menu*/
   .main-menu{
-    @apply relative flex w-auto items-end right-auto top-auto items-end mb-5 bg-transparent text-[#666] md:mb-3;
+    @apply relative flex w-auto right-auto top-auto mb-3  bg-transparent text-[#666];
+  }
+  .header .main-menu{
+    @apply mt-[54px] xl:mt-[68px];
   }
     .menu-toggle .menu-bar{
         @apply hidden;
     }
     .main-menu .menu-wrapper{
+        transform: translateY(0);
         max-height:none;
         opacity: 1;
     }
@@ -133,12 +149,5 @@
         height:2px;
         position:relative;
     }
-  .footer .main-menu{
-      @apply mb-0;
-  }
-  .footer .main-menu .menu-wrapper li a{
-    font-weight: 400;
-    color:#fff;
-  }
 }
  

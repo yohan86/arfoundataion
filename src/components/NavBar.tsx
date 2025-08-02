@@ -12,7 +12,7 @@ const  NavBar=({menuIcon}:NavbarProps)=> {
   return (
     <nav className={activeMenu ? "main-menu active": "main-menu"} onClick={()=>ToggleMenu()}>
       <div className="menu-wrapper relative h-0 overflow-hidden md:h-auto">
-        <ul className="flex flex-col gap-2 px-3 py-5 items-end uppercase md:flex-row md:gap-4 md:p-0">
+        <ul className="flex flex-col gap-4 px-3 py-5 items-end uppercase md:px-5 lg:flex-row lg:gap-4 lg:p-0">
           <li><NavLink to="/about">About Us</NavLink></li>
           <li><NavLink to="/about">Services</NavLink></li>
           <li><NavLink to="/about">Contact Us</NavLink></li>
