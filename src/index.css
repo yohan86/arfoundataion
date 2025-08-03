@@ -62,6 +62,9 @@
       font-weight: 600;
       color:#fff;
   }
+  .main-menu .menu-wrapper li a.active{
+    color:#f9849f;
+  }
 
   .menu-toggle{
     @apply block;

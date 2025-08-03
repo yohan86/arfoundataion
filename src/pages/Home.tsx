@@ -22,7 +22,7 @@ const Home = () => {
   
   const  {i18n } = useTranslation();
   const [pagedetails, setPagedetails] = useState<Home | null>(null);
-  const [lang, setLang] = useState<string>("en");
+  //const [lang, setLang] = useState<string>("en");
  /// const [slider, setSlider] = useState<SliderItem[]>([]);
 
   //const API_URL = import.meta.env.VITE_API_URL;
@@ -45,15 +45,15 @@ const Home = () => {
         setPagedetails(homeData);
        console.log(homeData);
 
-        const sliderItems:SliderItem[] = homeData.Homeslider?.map((item:Slider)=>({
+        /*const sliderItems:SliderItem[] = homeData.Homeslider?.map((item:Slider)=>({
           title:item.Title,
           caption:item.description,
           url:item.sliderimage?.data?.attributes?.url ?? '',
         }));
-       // setSlider(sliderItems);
-        console.log(sliderItems)
+       setSlider(sliderItems);
+        console.log(sliderItems);
         setLang(i18n.language);
-
+        */
       }catch(e:any){
         console.error("Fetch failed:", e);
       }
@@ -76,7 +76,7 @@ const Home = () => {
       <TheCEO  key={i18n.language} message={pagedetails?.TheCEOMessage} url={pagedetails?.CEOVideoUrl}  />
     )}    
 
-    <div className="h-[100px]">
+    <div>
       <pre>{/*JSON.stringify(pagedetails, null , 2)*/}</pre>
     </div>
       

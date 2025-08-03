@@ -14,9 +14,9 @@ const  NavBar=({menuIcon}:NavbarProps)=> {
       <div className="menu-wrapper relative h-0 overflow-hidden md:h-auto">
         <ul className="flex flex-col gap-4 px-3 py-5 items-end uppercase md:px-5 lg:flex-row lg:gap-4 lg:p-0">
           <li><NavLink to="/about">About Us</NavLink></li>
-          <li><NavLink to="/about">Services</NavLink></li>
-          <li><NavLink to="/about">Contact Us</NavLink></li>
-          <li><NavLink to="/about">Blog</NavLink></li>
+          <li><NavLink to="/services">Services</NavLink></li>
+          <li><NavLink to="/Contact-us">Contact Us</NavLink></li>
+          <li><NavLink to="/blog">Blog</NavLink></li>
         </ul>
       </div>
       {menuIcon && (
