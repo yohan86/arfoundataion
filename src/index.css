@@ -108,7 +108,8 @@
 }
 
 .slogan-title{
-    @apply  w-[63%] !text-[12px] text-[#f9849f] absolute top-2 right-2 md:!text-[25px] md:w-auto xl:top-8 md:right-auto md:left-[200px];
+    @apply  w-[63%] !text-[12px] text-[#f9849f] absolute top-4 right-2 md:!text-[25px] md:w-auto xl:top-8 md:right-auto md:left-[200px];
+    font-weight: 600;
 }
 .lang-si .slogan-title{
     @apply !text-[10px] md:!text-[20px];

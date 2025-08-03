@@ -8,14 +8,10 @@ import siCommon from "./locales/si.json";
 i18n.use(initReactI18next).init({
     resources: {
         en:{
-            translation:{
-              ...enCommon 
-            },
+            translation:enCommon,
         },
         si:{
-            translation:{
-               ...siCommon
-            }
+            translation:siCommon,
         }
     },
     lng: "en",

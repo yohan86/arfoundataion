@@ -22,6 +22,7 @@ const Home = () => {
   
   const  {i18n } = useTranslation();
   const [pagedetails, setPagedetails] = useState<Home | null>(null);
+  const [lang, setLang] = useState<string>("en");
  /// const [slider, setSlider] = useState<SliderItem[]>([]);
 
   //const API_URL = import.meta.env.VITE_API_URL;
@@ -51,6 +52,7 @@ const Home = () => {
         }));
        // setSlider(sliderItems);
         console.log(sliderItems)
+        setLang(i18n.language);
 
       }catch(e:any){
         console.error("Fetch failed:", e);
@@ -58,6 +60,7 @@ const Home = () => {
       
     };
     fetchData();
+    
   },[i18n.language]);
 
   return (
@@ -68,7 +71,7 @@ const Home = () => {
     {pagedetails?.maindescription && (
       <About  description={pagedetails?.maindescription || ""} />
     )}
-    <VisionMission />
+    <VisionMission lang={i18n.language} />
     {pagedetails?.TheCEOMessage && (
       <TheCEO  key={i18n.language} message={pagedetails?.TheCEOMessage} url={pagedetails?.CEOVideoUrl}  />
     )}    
