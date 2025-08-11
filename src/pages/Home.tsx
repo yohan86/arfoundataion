@@ -1,11 +1,14 @@
 import {useState, useEffect} from "react";
 import HeroSlider from "../components/HeroSlider";
 import VisionMission from "../components/VisionMission";
-import type { SliderItem, Slider } from "../types";
+import type { Slider } from "../types";
 import About from "../components/About";
 import TheCEO from "../components/TheCEO";
 import { useTranslation } from "react-i18next";
 import Footer from "../components/Footer";
+import Awards from "../components/Awards";
+import ServiceBox from "../components/ServiceBox";
+import InfoBox from "../components/InfoBox";
 
 
 
@@ -75,8 +78,15 @@ const Home = () => {
     {pagedetails?.TheCEOMessage && (
       <TheCEO  key={i18n.language} message={pagedetails?.TheCEOMessage} url={pagedetails?.CEOVideoUrl}  />
     )}    
-
-    <div>
+    <div className="block-wrapper flex my-15">
+      <div className="inner-wrapper flex flex-col w-[95%] gap-3 mb-10 md:flex-row lg:w-[980px] xl:w-[1200px]">
+        <ServiceBox bgcolor="#006881" />
+        <ServiceBox bgcolor="#cccccc" />
+        <InfoBox />
+      </div>
+    </div>
+   
+    <div className="h-[500px]">
       <pre>{/*JSON.stringify(pagedetails, null , 2)*/}</pre>
     </div>
       
