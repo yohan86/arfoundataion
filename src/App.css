@@ -180,7 +180,6 @@ a:hover{
 /*service box*/
 .servicebox {
     position:relative;
-    background-image: url(/images/services/ruralImage-1.jpg);
     background-size: 100% 444px;
     background-position: 0 -131px;
     background-repeat: no-repeat;
