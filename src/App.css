@@ -206,8 +206,9 @@ a:hover{
     position:relative;
     background-image: url(/images/infoImage.jpg);
     background-size: 100%;
-    background-position: 0 -131px;
+    background-position: 0 0;
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 20% 0;  
 }
 .infobox .box-intro .bg-design{
@@ -221,6 +222,8 @@ a:hover{
 .infobox .box-intro h3{
     text-shadow:1px 1px 4px #00d7a6;
 }
+
+
 
 
 @media (min-width: 768px) {

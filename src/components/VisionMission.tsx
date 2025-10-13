@@ -31,7 +31,7 @@ const VisionMission = ({lang}:VisionProps)=> {
         const t1 = gsap.timeline({
             scrollTrigger:{
                 trigger:"#vision-mission.vision-bg",
-                start: lang=="en"? "bottom 50%":"top 40%",
+                start: lang=="en"? "top 40%":"top 40%",
                 toggleActions: "play none none reverse",
             }
         });

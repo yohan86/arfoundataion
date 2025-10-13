@@ -1,4 +1,4 @@
-import Contacts from "./Contacts";
+import ContactDetails from "./ContactDetails";
 import NavBar from "./NavBar";
 import SocialMedia from "./SocialMedia";
 
@@ -10,7 +10,7 @@ const Footer= () => {
            <div className="flex flex-col md:flex-row footer-inner justify-between pt-[30px] md:pt-[50px]">
                 <div className="left-blk">
                     <NavBar menuIcon={false} />
-                    <Contacts />
+                    <ContactDetails />
                 </div>
                 <div className="right-blk">
                     <div className="grid  md:justify-items-end">

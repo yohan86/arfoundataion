@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "export-strapi": "node scripts/export-strapi.js",
-    "prebuild":"node scripts/export-strapi.js",
+    "prebuild": "node scripts/export-strapi.js",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -28,6 +28,7 @@
     "react-modal": "^3.16.3",
     "react-responsive": "^10.0.1",
     "react-router-dom": "^7.7.0",
+    "sweetalert2": "^11.26.2",
     "swiper": "^11.2.10",
     "tailwindcss": "^4.1.11"
   },

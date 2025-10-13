@@ -79,13 +79,13 @@ const Home = () => {
     )}    
     <div className="block-wrapper flex my-15">
       <div className="inner-wrapper flex flex-col w-[95%] gap-3 mb-10 md:flex-row lg:w-[980px] xl:w-[1200px]">
-        <ServiceBox bgcolor="#006881" image="./images/services/ruralImage-1.jpg" />
-        <ServiceBox bgcolor="#805195" image="./images/where.jpg" />
+        <ServiceBox bgcolor="#006881" image="./images/services/ruralImage-1.jpg" title="How We Work" />
+        <ServiceBox bgcolor="#805195" image="./images/where.jpg" title="What We Do" />
         <InfoBox />
       </div>
     </div>
    
-    <div>
+    <div >
       <pre>{/*JSON.stringify(pagedetails, null , 2)*/}</pre>
     </div>
       

@@ -1,7 +1,7 @@
 import { LuPhoneCall } from "react-icons/lu";
 import { TfiEmail } from "react-icons/tfi";
 
-const Contacts=()=> {
+const Contact=()=> {
   return (
     <div className="mt-4">
         <ul className="flex gap-2 flex-col color-white">
@@ -12,4 +12,4 @@ const Contacts=()=> {
   )
 }
 
-export default Contacts;
+export default Contact;
