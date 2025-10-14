@@ -20,7 +20,7 @@ const  HeroSlider = () => {
     ];
 
     return (
-        <div id="hero-slider" className="w-full h-[80vh] md:h-[460px] lg:h-[560px]">
+        <div id="hero-slider" className="relative w-full h-[45vh] md:h-[460px] lg:h-[560px] z-5">
         <Swiper
             slidesPerView={1}
             navigation={true}

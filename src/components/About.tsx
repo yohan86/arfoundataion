@@ -55,7 +55,7 @@ const About: React.FC<AboutInfo> = ({ description }) => {
   }, [description, isMobile]);
 
   return (
-    <div ref={aboutRef} className="block-wrapper ss flex mt-10 md:mb-20 lg:my-20 bg-[#3bb570]">
+    <div ref={aboutRef} className="block-wrapper flex pt-5 md:pt-10 md:mb-20 lg:mb-20 bg-[#3bb570] z-1">
       <div className="inner-wrapper w-[90%] md:w-[90%] py-12">
         <div className="about-blk flex flex-col lg:items-stretch gap-4 lg:gap-8 lg:flex-row">
           <div className="title-blk content-center w-[100%] lg:w-[40%] xl:w-[30%]">
