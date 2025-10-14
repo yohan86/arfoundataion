@@ -74,6 +74,10 @@
   }
 
 /*contact page*/
+.contact-form{
+  @apply z-10;
+  
+}
 .contact-form .input-box{
   @apply mb-5;
 }
@@ -83,6 +87,8 @@
   .contact-form label sup{
       @apply flex top-[7px];
   }
+  input:focus,
+  textarea:focus,
   .contact-form input,
   .contact-form textarea{
     @apply border-1 border-[#ccc] p-2 rounded-sm w-full;
@@ -100,6 +106,11 @@
   textarea:user-invalid:focus {
     outline: none;
     box-shadow: 0 0 5px #d79196;
+  }
+  .bg-tree{
+    @apply w-[95%] h-[400px] flex absolute top-2 left-3 z-1;
+    background-image:url("./images/form-bg.jpg");
+    background-repeat: no-repeat;
   }
 
 /*Slider*/

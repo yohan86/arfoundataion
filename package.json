@@ -5,8 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "export-strapi": "node scripts/export-strapi.js",
-    "prebuild": "node scripts/export-strapi.js",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
