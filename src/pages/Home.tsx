@@ -45,7 +45,7 @@ const Home = () => {
         const result = await response.json();
         const homeData = result.data[0].attributes;
         setPagedetails(homeData);
-       console.log(homeData);
+
 
         /*const sliderItems:SliderItem[] = homeData.Homeslider?.map((item:Slider)=>({
           title:item.Title,

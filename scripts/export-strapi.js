@@ -27,8 +27,6 @@ async function exportData(locale){
         fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
         console.log(`Exported ${locale}-> ${filePath}`);
         
-        console.log(`Fetching locale: ${locale}`);
-
     }catch(e){
         console.log(e);
     }
